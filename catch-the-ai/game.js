@@ -70,7 +70,7 @@ function spawn() {
     const character = randomCharacter();
     setCell(i, character);
     // Each character only stays for a short time before vanishing.
-    setTimeout(() => { if (board[i] === character) setCell(i, null); }, spawnDelay() * 1.6);
+    setTimeout(() => { if (board[i] === character) setCell(i, null); }, spawnDelay() * 0.5);
   }
   spawnTimer = setTimeout(spawn, spawnDelay());
 }
