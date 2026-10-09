@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catch the AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>🤖 Catch the AI</h1>
+    <p class="subtitle">Click the robots. Don't click the humans!</p>
+
+    <section class="hud">
+      <div>Score <strong id="score">0</strong></div>
+      <div>Time <strong id="time">30</strong></div>
+      <div>Combo <strong id="combo">x1</strong></div>
+      <div>Best <strong id="best">0</strong></div>
+    </section>
+
+    <div id="board"></div>
+
+    <div id="overlay">
+      <h2 id="overlayTitle">Ready?</h2>
+      <p id="overlayText">
+        🤖 robot = +10 · ⭐ golden AI = +50 · 🧑 human = −20 and combo resets
+      </p>
+      <button id="startBtn">Start</button>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
